@@ -5,11 +5,11 @@ metadata:
     app: solar-system
   name: solar-system-service
 spec:
+  type: NodePort
   ports:
   - port: 80 #change to 80
     protocol: TCP
     targetPort: 80 #change to 80
-    nodePort: 30333
+    nodePort: 8080
   selector:
     app: solar-system
-  type: NodePort
